@@ -25,5 +25,5 @@ def main():
 	return out
 
 
-with open(f'{os.environ.GITHUB_WORKSPACE}/members.json','w') as f:
+with open(f'{os.argv[1]}/members.json','w') as f:
 	json.dump(main(), f)
