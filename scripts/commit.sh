@@ -1,4 +1,5 @@
 echo "commit.sh started"
+cd $GITHUB_WORKSPACE
 git config --user.name "ScratchATs-bot[bot]"
 git config --user.email "ScratchATs-bot[bot]@users.noreply.github.com"
 echo "[commit.sh]: committing locally"
