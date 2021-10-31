@@ -7,6 +7,8 @@ runs:
   steps:
     - name: "Run python script"
       run: python3 $GITHUB_ACTION_PATH/scripts/get_members.py
+      shell: "bash"
       
     - name: "Commit files"
       run: bash $GITHUB_ACTION_PATH/scripts/commit.sh
+      shell: "bash"
