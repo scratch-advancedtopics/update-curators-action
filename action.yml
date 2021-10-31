@@ -1,0 +1,12 @@
+name: "Update curators action"
+author: "update-curators-action contributors"
+description: "Updates the members file in the main repository."
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Run python script"
+      run: python3 $GITHUB_ACTION_PATH/scripts/get_members.py
+      
+    - name: "Commit files"
+      run: bash $GITHUB_ACTION_PATH/scripts/commit.sh
