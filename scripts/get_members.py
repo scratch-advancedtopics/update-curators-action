@@ -1,6 +1,6 @@
 import urllib.request
 import json
-import os
+import sys
 
 def get_users(status):
 	offset = 0
@@ -25,5 +25,5 @@ def main():
 	return out
 
 
-with open(f'{os.argv[1]}/members.json','w') as f:
+with open(f'{sys.argv[1]}/members.json','w') as f:
 	json.dump(main(), f)
