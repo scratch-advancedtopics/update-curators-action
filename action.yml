@@ -6,7 +6,7 @@ runs:
   using: "composite"
   steps:
     - name: "Run python script"
-      run: python3 $GITHUB_ACTION_PATH/scripts/get_members.py
+      run: python3 $GITHUB_ACTION_PATH/scripts/get_members.py $GITHUB_WORKSPACE
       shell: "bash"
       
     - name: "Commit files"
