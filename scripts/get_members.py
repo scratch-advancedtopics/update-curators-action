@@ -24,6 +24,6 @@ def main():
 		out.append(i)
 	return out
 
-
+print(f"workspace: {sys.argv[1]}")
 with open(f'{sys.argv[1]}/members.json','w') as f:
 	json.dump(main(), f)
